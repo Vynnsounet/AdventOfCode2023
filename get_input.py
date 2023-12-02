@@ -26,6 +26,7 @@ code_template = f"""#imports go here
 
 with open(f"inputs/day{day}","r") as f:
     # TODO
+    pass
 
 """
 url = f"https://adventofcode.com/2023/day/{day}/input"
