@@ -1,6 +1,5 @@
 # imports go here
 
-
 def parse_line(tokens):
     l_d = []
     for draws in tokens:
@@ -53,4 +52,3 @@ with open(f"inputs/day2", "r") as f:
         mini = max_colors(l_d)
         s += mini["r"] * mini["g"] * mini["b"]
     print(s)
-

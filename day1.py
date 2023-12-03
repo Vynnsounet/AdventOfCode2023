@@ -1,6 +1,6 @@
 import re
 
-with open("inputs/day1_2.txt") as f:
+with open("inputs/day1") as f:
     s = 0
     l = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
     for line in f.readlines():

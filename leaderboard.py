@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 import requests
+from sys import argv
 
 url = "https://adventofcode.com/2023/leaderboard/private/view/1550660.json"
 
@@ -27,6 +28,6 @@ for e in members.values():
     leaderboard.append((e["name"], e["local_score"], e["stars"]))
 leaderboard.sort(key=lambda x: x[1], reverse=True)
 for i, (n, sc, st) in enumerate(leaderboard):
-    print(f"Name: {n} | Score: {sc} - Stars: {st}")
-    if i == 9:
+    print(f"{i + 1} Name: {n} | Score: {sc} - Stars: {st}")
+    if i == int(argv[1]) - 1:
         break
